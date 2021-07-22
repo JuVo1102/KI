@@ -11,6 +11,14 @@ const routes: Routes = [
     redirectTo: 'home',
     pathMatch: 'full'
   },
+  {
+    path: 'processing-page',
+    loadChildren: () => import('./processing-page/processing-page.module').then( m => m.ProcessingPagePageModule)
+  },
+  {
+    path: 'processing-page',
+    loadChildren: () => import('./processing-page/processing-page.module').then( m => m.ProcessingPagePageModule)
+  },
 ];
 
 @NgModule({
